@@ -14,16 +14,29 @@
         body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
         header { background: #fff; padding: 20px; display: flex; justify-content: center; align-items: center; border-bottom: 2px solid #eee; }
         header img { height: 100px; width: auto; display: block; }
-        nav { display: flex; justify-content: center; background: #333; padding: 10px 0; flex-wrap: wrap; }
+        
+        /* Navigation Styling */
+        nav { display: flex; justify-content: center; background: #333; padding: 10px 0; flex-wrap: wrap; align-items: center; }
         nav a { color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; }
         nav a:hover { background: #555; }
+        
+        /* Cart Button Styling */
+        .snipcart-checkout {
+            background: #ffcc00;
+            color: #333 !important;
+            border-radius: 20px;
+            margin-left: 20px;
+            padding: 8px 15px !important;
+        }
+        .snipcart-checkout:hover { background: #e6b800 !important; }
+
         .container { max-width: 1000px; margin: 20px auto; padding: 20px; }
         .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
         .product-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
         .product-card img { max-width: 100%; height: 200px; object-fit: cover; border-radius: 4px; }
         .price { font-weight: bold; color: #b12704; margin-top: 10px; }
         
-        /* Snipcart Button Styling */
+        /* Snipcart Buy Button Styling */
         .snipcart-add-item { background: #b12704; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; width: 100%; font-weight: bold; margin-top: 10px; }
         .snipcart-add-item:hover { background: #8e2003; }
     </style>
@@ -45,7 +58,6 @@
         <a href="handbags.html">Handbags</a>
         <a href="accessories.html">Accessories</a>
         <a href="contact.html">Contact</a>
-        <!-- Updated Cart Button -->
         <a href="#" class="snipcart-checkout">
             View Cart (<span class="snipcart-items-count">0</span>)
         </a>
@@ -87,27 +99,11 @@
                 </button>
             </div>
 
-            <!-- Pant 3 -->
-            <div class="product-card">
-                <img src="https://via.placeholder.com/200" alt="Product">
-                <h3>Relaxed Fit Cargos</h3>
-                <p class="price">$55.00</p>
-                <button class="snipcart-add-item"
-                  data-item-id="pant-003"
-                  data-item-name="Relaxed Fit Cargos"
-                  data-item-price="55.00"
-                  data-item-url="https://lob31.github.io/vintagevalleyvantage.github.io/pants.html"
-                  data-item-description="Durable cargo pants with multiple pockets."
-                  data-item-image="https://via.placeholder.com/200">
-                  Add to Cart
-                </button>
-            </div>
-
         </div>
     </div>
 
     <!-- Snipcart Script -->
-    <div id="snipcart" data-api-key="NzhhNDA2NDctNTA3NC00MmRmLWE0YWUtZmRlMzRmMGZlNGFiNjM5MTc4NzQ1Njk5Nzc2MTY0 hidden></div>
+    <div id="snipcart" data-api-key="NzhhNDA2NDctNTA3NC00MmRmLWE0YWUtZmRlMzRmMGZlNGFiNjM5MTc4NzQ1Njk5Nzc2MTY0" hidden></div>
     <script src="https://cdn.snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
 
 </body>
