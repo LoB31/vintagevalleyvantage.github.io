@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Vintage Valley Vantage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handbags | Vintage Valley Vantage</title>
     <style>
-        /* Keep the same CSS styles as your index.html here for consistency */
-        body { font-family: sans-serif; margin: 0; background: #f9f9f9; }
-        nav { display: flex; justify-content: center; background: #333; padding: 10px; }
-        nav a { color: white; padding: 10px; text-decoration: none; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+        
+        header { 
+            background: #fff; padding: 20px; display: flex; justify-content: center; 
+            align-items: center; border-bottom: 2px solid #eee; 
+        }
+        header img { height: 100px; width: auto; display: block; }
+        
+        nav { display: flex; justify-content: center; background: #333; padding: 10px 0; flex-wrap: wrap; }
+        nav a { color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background: #555; }
+
         .container { max-width: 1000px; margin: 20px auto; padding: 20px; }
-        .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-        .product-card { background: white; padding: 15px; text-align: center; border-radius: 8px; }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .product-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        .product-card img { max-width: 100%; height: 200px; object-fit: cover; border-radius: 4px; }
+        .price { font-weight: bold; color: #b12704; margin-top: 10px; }
     </style>
 </head>
 <body>
 
+    <header>
+        <a href="index.html">
+            <img src="https://raw.githubusercontent.com/LoB31/vintagevalleyvantage.github.io/main/images/Vintage%20Valley%20Vantage%20V4%20-%20Final.png" 
+                 alt="Vintage Valley Vantage Logo">
+        </a>
+    </header>
+
     <nav>
-        <a href="index.html">Home</a>
         <a href="tshirts.html">T-Shirts</a>
         <a href="pants.html">Pants</a>
         <a href="jackets.html">Jackets</a>
@@ -27,11 +46,15 @@
     <div class="container">
         <h2>Handbags</h2>
         <div class="product-grid">
-            <div class="product-card"><h3>Graphic Handbag 1</h3><p>$20</p></div>
-            <div class="product-card"><h3>Vintage Handbag 2</h3><p>$25</p></div>
-            <div class="product-card"><h3>Logo Handbag 3</h3><p>$30</p></div>
-        </div>
-    </div>
-
-</body>
-</html>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Product">
+                <h3>Leather Shoulder Bag</h3>
+                <p class="price">$110.00</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200" alt="Product">
+                <h3>Canvas Tote</h3>
+                <p class="price">$45.00</p>
+            </div>
+            <div class="product-card">
+                <img src
