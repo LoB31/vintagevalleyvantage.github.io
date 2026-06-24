@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Vintage Valley Vantage</title>
+    <style>
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+        
+        header { background: #fff; padding: 20px; display: flex; justify-content: center; border-bottom: 2px solid #eee; }
+        header img { height: 100px; width: auto; display: block; }
+        
+        nav { display: flex; justify-content: center; background: #333; padding: 10px 0; flex-wrap: wrap; }
+        nav a { color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; }
+        nav a:hover { background: #555; }
+        
+        .contact-container { max-width: 1000px; margin: 40px auto; display: flex; gap: 40px; padding: 20px; flex-wrap: wrap; }
+        .form-section, .info-section { flex: 1; min-width: 300px; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #333; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="https://raw.githubusercontent.com/LoB31/vintagevalleyvantage.github.io/main/images/Vintage%20Valley%20Vantage%20V4%20-%20Final.png" alt="Logo"></a>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tshirts.html">T-Shirts</a>
+        <a href="pants.html">Pants</a>
+        <a href="jackets.html">Jackets</a>
+        <a href="shoes.html">Shoes</a>
+        <a href="handbags.html">Handbags</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="contact-container">
+        <div class="form-section">
+            <h2>Send us a Message</h2>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                <label>Email (Required):</label>
+                <input type="email" name="email" required>
+                
+                <label>Phone Number (Optional):</label>
+                <input type="tel" name="phone">
+                
+                <label>Your Question:</label>
+                <textarea name="question" rows="5" required></textarea>
+                
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </div>
+
+        <div class="info-section">
+            <h2>Business Contact</h2>
+            <p><strong>Email:</strong> hello@vintagevalleyvantage.com</p>
+            <p><strong>Hours:</strong> Mon-Fri, 9am - 5pm</p>
+            <p><strong>Location:</strong> Valley Antique District, AZ</p>
+        </div>
+    </div>
+
+</body>
+</html>
